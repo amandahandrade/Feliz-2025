@@ -1,0 +1,72 @@
+@import "../../scss/utils/variables.scss";
+
+.main {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1); /* Tamanho original */
+    }
+    50% {
+      transform: scale(1.05); /* Aumenta o tamanho em 10% */
+    }
+    100% {
+      transform: scale(1); /* Retorna ao tamanho original */
+    }
+  }
+  
+  img {
+    width: 40%; /* Definindo a largura da imagem */
+    animation: pulse 3s ease-in-out infinite; /* Aplica a animação de pulsação infinita */
+  }
+  
+
+  .textContainer {
+    width: 35%;
+    color: $primary-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: right;
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 300;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        color: $tertiary-color;
+        font-weight: 500;
+        transform: scale(1.03);
+      }
+    }
+
+    h2 {
+      font-size: 3.125rem;
+      font-weight: 700;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        color: $tertiary-color;
+        font-weight: 900;
+        transform: scale(1.03);
+      }
+    }
+
+    p {
+      font-size: 1.4em;
+      font-weight: 500;
+      transition: transform 0.5s ease;
+
+      &:hover {
+        color: $second-color;
+        font-weight: 700;
+        transform: scale(1.03);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../scss/utils/variables.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 18vh;
+  padding: 0em 6em;
+
+  img {
+    width: 7.6875rem;
+    transition: transform 0.8s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  nav {
+    width: 25%;
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        font-size: 1.8rem;
+        color: $primary-color;
+        font-weight: 700;
+        display: inline-block;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          text-shadow: 2px 2px 5px #0000001a;
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 780px) {
+
+}
+
+@media (min-width: 780px) and (max-width: 1475px) {
+  //teste
+}
