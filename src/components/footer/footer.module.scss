@@ -1,8 +1,7 @@
-@import "../../scss/utils/variables.scss";
+@use "../../scss/utils/variables.scss" as *;
 
 .footer {
   height: 12vh;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -15,13 +14,13 @@
   text-align: left;
 
   p {
-    font-size: 1.2em;
+    font-size: 1rem;
     font-weight: 500;
   }
 }
 
 .socialLinks {
-  width: 15%;
+  width: 18%;
 
   ul {
     display: flex;
@@ -44,9 +43,117 @@
         }
 
         img {
-          width: 3.5rem;
+          width: 3.5em;
         }
       }
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vh;
+    padding: 0em;
+  }
+
+  .infoFooter {
+    width: 90%;
+    text-align: center;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .socialLinks {
+    width: 40%;
+
+    ul {
+      li {
+        a {
+          img {
+            width: 2.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25vh;
+    padding: 0em;
+  }
+
+  .infoFooter {
+    width: 90%;
+    text-align: center;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+
+  .socialLinks {
+    width: 40%;
+
+    ul {
+      li {
+        a {
+          img {
+            width: 2.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 18vh;
+    padding: 0em;
+  }
+
+  .infoFooter {
+    width: 90%;
+    text-align: center;
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  .socialLinks {
+    width: 30%;
+
+    ul {
+      li {
+        a {
+          img {
+            width: 2.5em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .infoFooter {
+    width:60%;
+    text-align: left;
+  }
+
+  .socialLinks {
+    width: 25%;
   }
 }

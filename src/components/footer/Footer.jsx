@@ -8,7 +8,7 @@ export default function Footer() {
     <footer className={s.footer}>
       <section className={s.infoFooter}>
         <p>Aluna: Amanda Andrade</p>
-        <p>Instrutor: Fernanda Corrêa</p>
+        <p>Instrutora: Fernanda Corrêa</p>
         <p>Facilitador: João Pedro Belo</p>
         <p>Layout criado para fins de estudos na Escola Vai na Web - jan. 2025</p>
       </section>
