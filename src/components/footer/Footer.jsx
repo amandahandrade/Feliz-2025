@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className={s.footer}>
       <section className={s.infoFooter}>
-        <p>Aluna: Amanda Andrade</p>
+        <p>Aluna: Amandah Andrade</p>
         <p>Instrutora: Fernanda Corrêa</p>
         <p>Facilitador: João Pedro Belo</p>
         <p>Layout criado para fins de estudos na Escola Vai na Web - jan. 2025</p>
